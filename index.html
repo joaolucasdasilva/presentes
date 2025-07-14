@@ -183,6 +183,12 @@
     <section> 
       <h2>Eu te amo!</h2>
     </section>
+        <script>
+      // Título piscante
+      let originalTitle = document.title;
+      window.addEventListener('blur', () => { document.title = '👋 Volta aqui, Rebeca!'; });
+      window.addEventListener('focus', () => { document.title = originalTitle; });
+    </script>
   </main>
 </body>
 </html>
